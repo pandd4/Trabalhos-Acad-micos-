@@ -1,0 +1,445 @@
+/* RESET BÁSICO */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #f0f0f0;
+
+    background-color: #1a1a1a; /* Fundo escuro */
+
+}
+
+/* VARIÁVEIS DE COR */
+
+:root {
+
+    --roxo-principal: #9932CC; /* Roxo vibrante */
+
+    --roxo-escuro: #4b0082; /* Roxo mais escuro para destaque */
+
+    --rosa-neon: #FF69B4; /* Rosa Neon para títulos */
+
+    --branco: #f0f0f0;
+
+}
+
+/* HEADER - TOPO DA PÁGINA */
+
+header {
+
+    background: linear-gradient(135deg, #1f013d, #4b0082);
+
+    padding: 60px 20px 40px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+header h1 {
+
+    font-size: 2.8rem;
+
+    color: var(--rosa-neon);
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+header h2 {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 2.5rem;
+
+    color: var(--branco);
+
+    font-weight: 400;
+
+    margin-bottom: 30px;
+
+}
+
+.cta-principal-header {
+
+    display: inline-block;
+
+    background-color: var(--rosa-neon);
+
+    color: #1a1a1a;
+
+    padding: 12px 30px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 1.1rem;
+
+    transition: background-color 0.3s;
+
+}
+
+.cta-principal-header:hover {
+
+    background-color: #FFC0CB; /* Rosa mais claro */
+
+}
+
+/* ESTILIZAÇÃO GERAL DO CONTEÚDO */
+
+main {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px;
+
+}
+
+h3 {
+
+    text-align: center;
+
+    font-size: 1.8rem;
+
+    color: var(--roxo-principal);
+
+    margin: 40px 0 20px;
+
+    border-bottom: 2px solid var(--roxo-principal);
+
+    padding-bottom: 10px;
+
+}
+
+/* DESTAQUES */
+
+#destaques {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+.destaque-container {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.destaque-item {
+
+    background-color: #2c2c2c;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    width: 100%;
+
+    max-width: 300px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    border-left: 5px solid var(--rosa-neon);
+
+}
+
+.destaque-item h4 {
+
+    color: var(--rosa-neon);
+
+    margin-bottom: 10px;
+
+}
+
+/* TABELA DE SERVIÇOS */
+
+.tabela-servicos {
+
+    background-color: #2c2c2c;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.linha {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #3a3a3a;
+
+    align-items: center;
+
+}
+
+.linha:last-child {
+
+    border-bottom: none;
+
+}
+
+.linha:nth-child(even) {
+
+    background-color: #3a3a3a; /* Linhas zebradas para facilitar a leitura */
+
+}
+
+.linha.header {
+
+    background-color: var(--roxo-escuro);
+
+    font-weight: 700;
+
+    color: var(--branco);
+
+    font-size: 1.1rem;
+
+}
+
+.servico {
+
+    flex-grow: 1;
+
+    text-align: left;
+
+}
+
+.valor {
+
+    font-weight: 700;
+
+    color: var(--rosa-neon);
+
+    width: 80px;
+
+    text-align: right;
+
+    flex-shrink: 0;
+
+}
+
+.linha.pacote {
+
+    background-color: var(--roxo-principal);
+
+    text-align: center;
+
+    font-weight: 400;
+
+    font-size: 0.9rem;
+
+}
+
+.linha.pacote .full-width {
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+.aviso-preco {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 0.9rem;
+
+    color: #aaa;
+
+}
+
+/* SEÇÃO DE CONTATO */
+
+#contato {
+
+    text-align: center;
+
+    margin: 60px 0;
+
+    padding: 30px;
+
+    background-color: #2c2c2c;
+
+    border-radius: 10px;
+
+}
+
+.cta-whatsapp {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #25D366; /* Cor do WhatsApp */
+
+    color: #1a1a1a;
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 1.2rem;
+
+    max-width: 350px;
+
+    margin: 20px auto;
+
+    transition: background-color 0.3s;
+
+}
+
+.cta-whatsapp:hover {
+
+    background-color: #128C7E;
+
+    color: var(--branco);
+
+}
+
+.cta-whatsapp img {
+
+    width: 25px;
+
+    margin-right: 10px;
+
+}
+
+.confianca {
+
+    color: var(--roxo-principal);
+
+    font-style: italic;
+
+    font-size: 1rem;
+
+}
+
+/* WHATSAPP FLUTUANTE */
+
+#whatsapp-float {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    width: 60px;
+
+    height: 60px;
+
+    background-color: #25D366;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    z-index: 1000;
+
+    transition: transform 0.3s;
+
+}
+
+#whatsapp-float:hover {
+
+    transform: scale(1.1);
+
+}
+
+#whatsapp-float img {
+
+    width: 35px;
+
+}
+
+/* RESPONSIVIDADE (Celulares) */
+
+@media (max-width: 600px) {
+
+    header h1 {
+
+        font-size: 2rem;
+
+    }
+
+    header h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .linha {
+
+        padding: 12px 15px;
+
+        font-size: 0.95rem;
+
+    }
+
+    .destaque-item {
+
+        max-width: none;
+
+        margin-bottom: 15px;
+
+    }
+
+    .cta-whatsapp {
+
+        font-size: 1rem;
+
+        padding: 12px 20px;
+
+    }
+
+}
